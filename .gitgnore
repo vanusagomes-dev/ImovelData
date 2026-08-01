@@ -1,0 +1,7 @@
+__pycache__/
+.vscode
+/analise_imoveis.xlsx
+*.xlsx
+.ipynb_checkpoints/
+
+
