@@ -1,12 +1,14 @@
 # 📊 Análise de Imóveis - Automação de Relatórios Financeiros
 
-Sistema desenvolvido em *Python* para análise de rentabilidade imobiliária, geração automática de relatórios financeiros e exportação estruturada dos dados para Excel.
+> **Python | Pandas | OpenPyXL | SQLite | Excel | Git | GitHub | Data Analytics**
 
-O projeto tem como objetivo auxiliar na avaliação de oportunidades imobiliárias através do cálculo de indicadores financeiros como *Yield Bruto, Yield Líquido e Rentabilidade*, proporcionando uma visão mais clara para tomada de decisão de investimento.
+Sistema desenvolvido em **Python** para análise de rentabilidade imobiliária, geração automática de relatórios financeiros e exportação estruturada dos dados para Excel.
+
+O projeto tem como objetivo auxiliar na avaliação de oportunidades imobiliárias por meio do cálculo de indicadores financeiros como **Yield Bruto, Yield Líquido e Rentabilidade**, proporcionando uma visão mais clara para a tomada de decisão de investimentos.
 
 ---
 
-## 🚀 Funcionalidades do Projeto
+# 🚀 Funcionalidades do Projeto
 
 ✅ Processamento automático de dados imobiliários utilizando Python.
 
@@ -42,27 +44,29 @@ O projeto tem como objetivo auxiliar na avaliação de oportunidades imobiliári
 
 # 🏗️ Estrutura do Projeto
 
-text
+```text
 projeto-data-analytics/
 │
-├── Analise_Imoveis.xlsx        # Relatório financeiro gerado automaticamente
+├── Analise_Imoveis.xlsx
 │
-│── images/
-│   └── Analise_Imoveis.jpeg    # Imagem da planilha
-│── noteboks
+├── images/
+│   └── Analise_Imoveis.jpeg
 │
-│──.gitignore                   
+├── notebooks/                 # Testes futuros e análises exploratórias
 │
-├── analise.py                 # Código principal de análise e geração do relatório
+├── .gitignore                 # Arquivos temporários ignorados pelo Git
 │
-├── README.md                  # Documentação do projeto
+├── analise.py
 │
-│── LICENSE                    # MIT
+├── database.py
 │
-│── database.py                # Banco de dados SQLite (estrutura futura)
+├── README.md
 │
-└── data/
-    └── imoveis.db             
+├── LICENSE
+│
+└── data/                      # Base de dados do projeto
+    └── imoveis.db
+```
 
 ---
 
@@ -71,8 +75,11 @@ projeto-data-analytics/
 - Python 3
 - Pandas
 - OpenPyXL
-- Excel
-- SQLite (estrutura preparada para evolução)
+- SQLite
+- Microsoft Excel
+- Git
+- GitHub
+- Visual Studio Code
 
 ---
 
@@ -80,11 +87,11 @@ projeto-data-analytics/
 
 ## Taxa Administrativa
 
-Considera uma taxa de administração sobre a receita de aluguel.
+Considera uma taxa de administração aplicada sobre a receita de aluguel.
 
 ## Provisão de Custos
 
-Considera valores destinados para manutenção e despesas relacionadas ao imóvel.
+Considera valores destinados à manutenção e demais despesas relacionadas ao imóvel.
 
 ## Indicadores Financeiros
 
@@ -94,7 +101,7 @@ Mede o retorno anual do aluguel bruto em relação ao valor investido no imóvel
 
 ### Yield Líquido
 
-Representa o retorno anual considerando os descontos e custos envolvidos.
+Representa o retorno anual considerando todos os custos e despesas envolvidos.
 
 ### Rentabilidade
 
@@ -104,28 +111,29 @@ Indicador utilizado para demonstrar o potencial de retorno do investimento imobi
 
 # ▶️ Como Executar o Projeto
 
-Clone o repositório:
+### 1️⃣ Clone o repositório
 
-bash
-git clone https://github.com/Vanusagomes-dev
+```bash
+git clone https://github.com/Vanusagomes-dev/projeto-data-analytics.git
+```
 
+### 2️⃣ Acesse a pasta do projeto
 
-Acesse a pasta do projeto:
-
-bash
+```bash
 cd projeto-data-analytics
+```
 
+### 3️⃣ Instale as dependências
 
-Instale as dependências:
-
-bash
+```bash
 pip install pandas openpyxl
+```
 
+### 4️⃣ Execute o sistema
 
-Execute o sistema:
-
-bash
+```bash
 python analise.py
+```
 
 ---
 
@@ -133,23 +141,31 @@ python analise.py
 
 Após executar o programa:
 
-- O relatório será exibido no terminal do VS Code;
-- Será criada automaticamente a planilha:
+- O relatório será exibido diretamente no terminal do VS Code;
+- Será gerada automaticamente a planilha:
 
-
+```text
 Analise_Imoveis.xlsx
+```
 
+A planilha conterá todos os indicadores financeiros formatados e organizados para análise.
 
-A planilha conterá os indicadores financeiros formatados e organizados para análise.
+Em computadores com Microsoft Excel instalado, o arquivo será aberto automaticamente após a execução do sistema.
 
-Em computadores com Microsoft Excel instalado, o arquivo será aberto automaticamente após a execução.
+---
+
+# 🖼️ Prévia do Relatório
+
+Abaixo está um exemplo da planilha gerada automaticamente pelo sistema.
+
+![Relatório Excel](images/Analise_Imoveis.jpeg)
 
 ---
 
 # 📊 Exemplo de Indicadores Gerados
 
 | Indicador | Resultado |
-|---|---:|
+|-----------|----------:|
 | Valor do imóvel | R$ 259.000,00 |
 | Aluguel bruto | R$ 2.200,00 |
 | Taxa Administração | R$ 150,00 |
@@ -162,7 +178,7 @@ Em computadores com Microsoft Excel instalado, o arquivo será aberto automatica
 
 # 🎯 Objetivo Profissional
 
-Este projeto faz parte do meu portfólio em *Data Analytics*, demonstrando aplicação prática de:
+Este projeto faz parte do meu portfólio em **Data Analytics**, demonstrando a aplicação prática de:
 
 - Automação de relatórios;
 - Tratamento e organização de dados;
@@ -170,71 +186,14 @@ Este projeto faz parte do meu portfólio em *Data Analytics*, demonstrando aplic
 - Geração de indicadores;
 - Python aplicado a negócios.
 
-A solução foi desenvolvida pensando em cenários reais do mercado imobiliário, auxiliando investidores e profissionais na análise de oportunidades.
-
----
+A solução foi desenvolvida para simular um cenário real de análise financeira imobiliária, aplicando automação, organização de dados e geração de indicadores para apoiar a tomada de decisão de investidores e profissionais do mercado imobiliário.
 
 # 👩‍💻 Desenvolvido por
 
-*Vanusa Gomes*
+**Vanusa Pereira Gomes**
 
 GitHub:
-*Vanusagomes-dev*
 
-Projeto desenvolvido para estudos e aplicação prática de *Python, Data Analytics e Inteligência de Negócios.*
+https://github.com/Vanusagomes-dev
 
-# 📄 Licença
-
-Este projeto está licenciado sob a licença MIT.
-
-Consulte o arquivo [LICENSE](LICENSE) para mais informaçõe
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Projeto desenvolvido para estudos e aplicação prática de **Python, Data Analytics e Inteligência de Negócios**.

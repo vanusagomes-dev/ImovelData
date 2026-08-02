@@ -13,3 +13,5 @@ Thumbs.db
 # Arquivos temporários do excel
 ^$*
 
+# Configurações locais do VS Code
+.vscode/
