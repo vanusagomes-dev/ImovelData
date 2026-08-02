@@ -47,40 +47,21 @@ O projeto tem como objetivo auxiliar na avaliação de oportunidades imobiliári
 ```text
 projeto-data-analytics/
 │
-├── Analise_Imoveis.xlsx
+├── Analise_Imoveis.xlsx    # Relatório de análise de imóveis gerado automaticamente
+├── analise.py              # Código Principal do Projeto
+├── database.py             # Estrutura do Banco de Dados SQLite
+├── README.md               # Documentação do Projeto
+├── LICENSE                 # Licença MIT
+├── .gitignore              # Arquivos ignorados pelo Git
 │
 ├── images/
 │   └── Analise_Imoveis.jpeg
 │
-├── notebooks/                 # Testes futuros e análises exploratórias
+├── notebooks/
+│   └── comandos.txt    # Anotações, testes e comandos futuros
 │
-├── .gitignore                 # Arquivos temporários ignorados pelo Git
-│
-├── analise.py
-│
-├── database.py
-│
-├── README.md
-│
-├── LICENSE
-│
-└── data/                      # Base de dados do projeto
-    └── imoveis.db
-```
-
----
-
-# 🛠️ Tecnologias Utilizadas
-
-- Python 3
-- Pandas
-- OpenPyXL
-- SQLite
-- Microsoft Excel
-- Git
-- GitHub
-- Visual Studio Code
-
+└── data/
+    └── imoveis.db      # Banco de dados SQLite
 ---
 
 # 📌 Regras de Negócio Aplicadas
