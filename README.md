@@ -51,7 +51,7 @@ projeto-data-analytics/
 │   └── Analise_Imoveis.jpeg    # Imagem da planilha
 │── noteboks
 │
-│──.gitgnore                   
+│──.gitignore                   
 │
 ├── analise.py                 # Código principal de análise e geração do relatório
 │
