@@ -1,7 +1,15 @@
+# Arquivos temporários do python
 __pycache__/
-.vscode
-/analise_imoveis.xlsx
-*.xlsx
-.ipynb_checkpoints/
+*.pyc
 
+# Ambiente virtual
+venv/
+.env
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do excel
+^$*
 

@@ -1,234 +1,193 @@
-# 📊 Análise de Rentabilidade de Imóveis
+# 📊 Análise de Imóveis - Automação de Relatórios Financeiros
 
-Projeto desenvolvido em **Python** para automatizar a geração de uma planilha Excel com indicadores financeiros de rentabilidade imobiliária, proporcionando uma análise rápida, organizada e profissional dos dados.
----
+Sistema desenvolvido em *Python* para análise de rentabilidade imobiliária, geração automática de relatórios financeiros e exportação estruturada dos dados para Excel.
 
-## ✨ Funcionalidades
-
-- Geração automática de planilha Excel (.xlsx)
-- Formatação profissional da tabela
-- Cabeçalho personalizado
-- Formatação em moeda brasileira (R$)
-- Formatação automática de percentuais
-- Ajuste automático da largura das colunas
-- Congelamento da primeira linha
-- Filtro automático
-- Código organizado e de fácil manutenção
+O projeto tem como objetivo auxiliar na avaliação de oportunidades imobiliárias através do cálculo de indicadores financeiros como *Yield Bruto, Yield Líquido e Rentabilidade*, proporcionando uma visão mais clara para tomada de decisão de investimento.
 
 ---
 
-## 📈 Indicadores Calculados
+## 🚀 Funcionalidades do Projeto
 
-- Valor de Venda
-- Aluguel Bruto
-- Condomínio
-- IPTU
-- Taxa de Administração
-- Provisão
-- Aluguel Líquido
-- Yield Bruto
-- Yield Líquido
-- Rentabilidade
+✅ Processamento automático de dados imobiliários utilizando Python.
+
+✅ Cálculo de indicadores financeiros:
+
+- Valor de venda do imóvel;
+- Receita de aluguel bruto;
+- Custos operacionais;
+- Taxa administrativa;
+- Provisão para despesas;
+- Aluguel líquido;
+- Yield Bruto;
+- Yield Líquido;
+- Rentabilidade.
+
+✅ Geração automática de relatório em Excel.
+
+✅ Formatação profissional da planilha:
+
+- Cabeçalho personalizado;
+- Cores e destaques visuais;
+- Valores monetários em Real (R$);
+- Percentuais formatados;
+- Colunas ajustadas automaticamente;
+- Filtro de dados;
+- Congelamento do cabeçalho.
+
+✅ Visualização do relatório diretamente no terminal do VS Code.
+
+✅ Abertura automática da planilha Excel após a execução.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+# 🏗️ Estrutura do Projeto
+
+text
+projeto-data-analytics/
+│
+├── Analise_Imoveis.xlsx        # Relatório financeiro gerado automaticamente
+│
+│── images/
+│   └── Analise_Imoveis.jpeg    # Imagem da planilha
+│── noteboks
+│
+│──.gitgnore                   
+│
+├── analise.py                 # Código principal de análise e geração do relatório
+│
+├── README.md                  # Documentação do projeto
+│
+│── LICENSE                    # MIT
+│
+│── database.py                # Banco de dados SQLite (estrutura futura)
+│
+└── data/
+    └── imoveis.db             
+
+---
+
+# 🛠️ Tecnologias Utilizadas
 
 - Python 3
 - Pandas
 - OpenPyXL
+- Excel
+- SQLite (estrutura preparada para evolução)
 
 ---
 
-## 📂 Estrutura do Projeto
+# 📌 Regras de Negócio Aplicadas
 
-```text
-projeto-data-analytics/
-│
-└── ImovelData/
-    │
-    ├── analise.py
-    ├── database.py
-    ├── imoveis.db
-    ├── requirements.txt
-    ├── .gitignore
-    ├── README.md
-    ├── data/
-    ├── notebooks/
-    ├── images/
-    │   └── Planilha.jpeg
-    └── analise_imoveis.xlsx (gerado automaticamente)
-```
+## Taxa Administrativa
+
+Considera uma taxa de administração sobre a receita de aluguel.
+
+## Provisão de Custos
+
+Considera valores destinados para manutenção e despesas relacionadas ao imóvel.
+
+## Indicadores Financeiros
+
+### Yield Bruto
+
+Mede o retorno anual do aluguel bruto em relação ao valor investido no imóvel.
+
+### Yield Líquido
+
+Representa o retorno anual considerando os descontos e custos envolvidos.
+
+### Rentabilidade
+
+Indicador utilizado para demonstrar o potencial de retorno do investimento imobiliário.
 
 ---
 
-## 🚀 Como Executar
+# ▶️ Como Executar o Projeto
 
-### 1. Clone o repositório
+Clone o repositório:
 
-```bash
-git clone https://github.com/vanusagomes-dev/ImovelData.git
-```
+bash
+git clone https://github.com/Vanusagomes-dev
 
-### 2. Entre na pasta do projeto
 
-```bash
-cd ImovelData
-```
+Acesse a pasta do projeto:
 
-### 3. Instale as dependências
+bash
+cd projeto-data-analytics
 
-```bash
-pip install -r requirements.txt
-```
 
-### 4. Execute o projeto
+Instale as dependências:
 
-```bash
+bash
+pip install pandas openpyxl
+
+
+Execute o sistema:
+
+bash
 python analise.py
-```
-
-### 5. Abra a planilha gerada (Windows)
-
-```bash
-start analise_imoveis.xlsx
-```
 
 ---
 
-## 📄 Saída
+# 📈 Saída do Projeto
 
-Após executar o projeto, será gerado automaticamente o arquivo:
+Após executar o programa:
 
-```text
-analise_imoveis.xlsx
-```
+- O relatório será exibido no terminal do VS Code;
+- Será criada automaticamente a planilha:
 
-A planilha conterá todos os indicadores financeiros formatados e prontos para análise.
 
----
+Analise_Imoveis.xlsx
 
-## 💡 Objetivo
 
-Este projeto foi desenvolvido para demonstrar conhecimentos em:
+A planilha conterá os indicadores financeiros formatados e organizados para análise.
 
-- Automação com Python
-- Manipulação de dados com Pandas
-- Geração de planilhas Excel
-- Formatação avançada utilizando OpenPyXL
-- Organização de código
-- Boas práticas de desenvolvimento
+Em computadores com Microsoft Excel instalado, o arquivo será aberto automaticamente após a execução.
 
 ---
 
-## 👩‍💻 Autora
+# 📊 Exemplo de Indicadores Gerados
 
-**Vanusa Pereira Gomes**
-
-**Python Developer**
-
-GitHub: https://github.com/vanusagomes-dev
+| Indicador | Resultado |
+|---|---:|
+| Valor do imóvel | R$ 259.000,00 |
+| Aluguel bruto | R$ 2.200,00 |
+| Taxa Administração | R$ 150,00 |
+| Aluguel líquido | R$ 2.050,00 |
+| Yield Bruto | 10,19% |
+| Yield Líquido | 9,49% |
+| Rentabilidade | 7,00% |
 
 ---
 
-## 📌 Licença
+# 🎯 Objetivo Profissional
 
-Este projeto foi desenvolvido para fins de estudo, demonstração técnica e composição de portfólio.
+Este projeto faz parte do meu portfólio em *Data Analytics*, demonstrando aplicação prática de:
 
+- Automação de relatórios;
+- Tratamento e organização de dados;
+- Análise financeira;
+- Geração de indicadores;
+- Python aplicado a negócios.
 
+A solução foi desenvolvida pensando em cenários reais do mercado imobiliário, auxiliando investidores e profissionais na análise de oportunidades.
 
+---
 
+# 👩‍💻 Desenvolvido por
 
+*Vanusa Gomes*
 
+GitHub:
+*Vanusagomes-dev*
 
+Projeto desenvolvido para estudos e aplicação prática de *Python, Data Analytics e Inteligência de Negócios.*
 
+# 📄 Licença
 
+Este projeto está licenciado sob a licença MIT.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Consulte o arquivo [LICENSE](LICENSE) para mais informaçõe
 
 
 
